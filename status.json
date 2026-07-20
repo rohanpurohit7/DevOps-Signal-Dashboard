@@ -1,7 +1,365 @@
 {
-  "generated_at": "2026-07-20T16:27:23.289658+00:00",
+  "generated_at": "2026-07-20T19:58:03.537553+00:00",
   "owner": "rohanpurohit7",
-  "summary": {"green": 3, "yellow": 26, "red": 0},
-  "repositories": [],
-  "errors": []
+  "summary": {
+    "green": 3,
+    "yellow": 26,
+    "red": 1
+  },
+  "repositories": [
+    {
+      "repository": "AWS-Enterprise-Architecture-Learn",
+      "url": "https://github.com/rohanpurohit7/AWS-Enterprise-Architecture-Learn",
+      "signal": "RED",
+      "detail": "failure",
+      "workflow": "Render AWS Architecture Diagrams",
+      "run_number": 36,
+      "run_url": "https://github.com/rohanpurohit7/AWS-Enterprise-Architecture-Learn/actions/runs/29764409411",
+      "branch": "master",
+      "updated_at": "2026-07-20T19:52:44Z",
+      "failed_steps": [
+        {
+          "job": "render",
+          "step": "Render AWS-icon PlantUML sources to SVG",
+          "conclusion": "failure"
+        }
+      ]
+    },
+    {
+      "repository": "AdobeDigitalSignatureService",
+      "url": "https://github.com/rohanpurohit7/AdobeDigitalSignatureService",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-07T19:51:36Z"
+    },
+    {
+      "repository": "Amazon-Recognition-API",
+      "url": "https://github.com/rohanpurohit7/Amazon-Recognition-API",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-07T20:44:06Z"
+    },
+    {
+      "repository": "Chat-Client",
+      "url": "https://github.com/rohanpurohit7/Chat-Client",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-09T15:40:16Z"
+    },
+    {
+      "repository": "Data-Engineering-Lab--Apache-Spark",
+      "url": "https://github.com/rohanpurohit7/Data-Engineering-Lab--Apache-Spark",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-09T19:03:43Z"
+    },
+    {
+      "repository": "Data-Engineering-Lab--HBase",
+      "url": "https://github.com/rohanpurohit7/Data-Engineering-Lab--HBase",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-09T19:05:28Z"
+    },
+    {
+      "repository": "Data-Engineering-Lab--Hive",
+      "url": "https://github.com/rohanpurohit7/Data-Engineering-Lab--Hive",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-09T19:04:08Z"
+    },
+    {
+      "repository": "Data-Engineering-Lab--K-Means-Clustering-on-Spark",
+      "url": "https://github.com/rohanpurohit7/Data-Engineering-Lab--K-Means-Clustering-on-Spark",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-12T16:14:19Z"
+    },
+    {
+      "repository": "Data-Engineering-Lab--Pig",
+      "url": "https://github.com/rohanpurohit7/Data-Engineering-Lab--Pig",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-09T19:05:23Z"
+    },
+    {
+      "repository": "Data-Engineering-Lab-1--Hadoop-Mapreduce",
+      "url": "https://github.com/rohanpurohit7/Data-Engineering-Lab-1--Hadoop-Mapreduce",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-09T19:02:15Z"
+    },
+    {
+      "repository": "DataEngineering",
+      "url": "https://github.com/rohanpurohit7/DataEngineering",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-12T20:14:45Z"
+    },
+    {
+      "repository": "DataScienceProject",
+      "url": "https://github.com/rohanpurohit7/DataScienceProject",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2020-08-06T12:42:55Z"
+    },
+    {
+      "repository": "DevOps-Signal-Dashboard",
+      "url": "https://github.com/rohanpurohit7/DevOps-Signal-Dashboard",
+      "signal": "YELLOW",
+      "detail": "in_progress",
+      "workflow": "DevOps Signal Dashboard",
+      "run_number": 1,
+      "run_url": "https://github.com/rohanpurohit7/DevOps-Signal-Dashboard/actions/runs/29774122593",
+      "branch": "main",
+      "updated_at": "2026-07-20T19:57:52Z"
+    },
+    {
+      "repository": "DocumentApprovalStamp",
+      "url": "https://github.com/rohanpurohit7/DocumentApprovalStamp",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2020-01-06T22:00:41Z"
+    },
+    {
+      "repository": "IndustryGradeProject1",
+      "url": "https://github.com/rohanpurohit7/IndustryGradeProject1",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-10T15:02:23Z"
+    },
+    {
+      "repository": "IndustryGradeProject2",
+      "url": "https://github.com/rohanpurohit7/IndustryGradeProject2",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-10T15:04:13Z"
+    },
+    {
+      "repository": "Interview-Prep-Center--Browser-Portal-",
+      "url": "https://github.com/rohanpurohit7/Interview-Prep-Center--Browser-Portal-",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-10T21:54:17Z"
+    },
+    {
+      "repository": "multi-objective-neural-optimization-cybersecurity",
+      "url": "https://github.com/rohanpurohit7/multi-objective-neural-optimization-cybersecurity",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-20T17:37:12Z"
+    },
+    {
+      "repository": "No-SQL-Lab-Mongo-DB",
+      "url": "https://github.com/rohanpurohit7/No-SQL-Lab-Mongo-DB",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-09T19:04:02Z"
+    },
+    {
+      "repository": "No-SQL-Labs--HBase",
+      "url": "https://github.com/rohanpurohit7/No-SQL-Labs--HBase",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-09T19:00:29Z"
+    },
+    {
+      "repository": "NoSQL-Lab-Neo4j",
+      "url": "https://github.com/rohanpurohit7/NoSQL-Lab-Neo4j",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-09T19:02:58Z"
+    },
+    {
+      "repository": "NoSQL-Lab_Riak",
+      "url": "https://github.com/rohanpurohit7/NoSQL-Lab_Riak",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-09T19:04:30Z"
+    },
+    {
+      "repository": "NoSQL-Labs_Cassandra",
+      "url": "https://github.com/rohanpurohit7/NoSQL-Labs_Cassandra",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-09T19:03:00Z"
+    },
+    {
+      "repository": "QR-Coder-App",
+      "url": "https://github.com/rohanpurohit7/QR-Coder-App",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2020-07-24T15:46:55Z"
+    },
+    {
+      "repository": "Rohan-s-Programs",
+      "url": "https://github.com/rohanpurohit7/Rohan-s-Programs",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-09T16:38:38Z"
+    },
+    {
+      "repository": "SQL-Plus-Basic-Commands",
+      "url": "https://github.com/rohanpurohit7/SQL-Plus-Basic-Commands",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-07-09T16:01:08Z"
+    },
+    {
+      "repository": "TravelManagementApp",
+      "url": "https://github.com/rohanpurohit7/TravelManagementApp",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-04-04T17:16:04Z"
+    },
+    {
+      "repository": "Java-Games--battleship",
+      "url": "https://github.com/rohanpurohit7/Java-Games--battleship",
+      "signal": "GREEN",
+      "detail": "success",
+      "workflow": "JavaFX Build",
+      "run_number": 1,
+      "run_url": "https://github.com/rohanpurohit7/Java-Games--battleship/actions/runs/29034068720",
+      "branch": "master",
+      "updated_at": "2026-07-09T16:38:48Z"
+    },
+    {
+      "repository": "Java-Games--DJ-app--Midi-API",
+      "url": "https://github.com/rohanpurohit7/Java-Games--DJ-app--Midi-API",
+      "signal": "GREEN",
+      "detail": "success",
+      "workflow": "JavaFX Build",
+      "run_number": 1,
+      "run_url": "https://github.com/rohanpurohit7/Java-Games--DJ-app--Midi-API/actions/runs/29034086127",
+      "branch": "master",
+      "updated_at": "2026-07-09T16:38:24Z"
+    },
+    {
+      "repository": "Python-ML-IndustryExample-Finance",
+      "url": "https://github.com/rohanpurohit7/Python-ML-IndustryExample-Finance",
+      "signal": "GREEN",
+      "detail": "success",
+      "workflow": "Notebook validation",
+      "run_number": 10,
+      "run_url": "https://github.com/rohanpurohit7/Python-ML-IndustryExample-Finance/actions/runs/29199496478",
+      "branch": "main",
+      "updated_at": "2026-07-12T16:07:09Z"
+    }
+  ],
+  "errors": [
+    {
+      "repository": "AWS-Enterprise-Architecture-Learn",
+      "workflow": "Render AWS Architecture Diagrams",
+      "run_number": 36,
+      "run_url": "https://github.com/rohanpurohit7/AWS-Enterprise-Architecture-Learn/actions/runs/29764409411",
+      "conclusion": "failure",
+      "updated_at": "2026-07-20T19:52:44Z",
+      "failed_steps": [
+        {
+          "job": "render",
+          "step": "Render AWS-icon PlantUML sources to SVG",
+          "conclusion": "failure"
+        }
+      ]
+    }
+  ]
 }
