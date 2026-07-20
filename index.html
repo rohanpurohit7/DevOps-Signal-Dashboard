@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DevOps Signal Dashboard</title>
+  <style>
+    :root { color-scheme: light dark; font-family: Inter, system-ui, sans-serif; }
+    body { max-width: 1200px; margin: 0 auto; padding: 24px; }
+    h1 { margin-bottom: 4px; }
+    .summary { display: grid; grid-template-columns: repeat(3, minmax(140px, 1fr)); gap: 12px; margin: 24px 0; }
+    .card { border: 1px solid #8885; border-radius: 14px; padding: 18px; }
+    .count { font-size: 2rem; font-weight: 700; }
+    .signal { width: 14px; height: 14px; border-radius: 50%; display: inline-block; margin-right: 8px; vertical-align: -1px; }
+    .GREEN { background: #2da44e; box-shadow: 0 0 8px #2da44e; }
+    .YELLOW { background: #bf8700; box-shadow: 0 0 8px #bf8700; }
+    .RED { background: #cf222e; box-shadow: 0 0 8px #cf222e; }
+    table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+    th, td { text-align: left; border-bottom: 1px solid #8884; padding: 10px 8px; vertical-align: top; }
+    a { color: inherit; }
+    .error { border-left: 5px solid #cf222e; padding: 12px 16px; margin: 12px 0; background: #cf222e0d; }
+    code { overflow-wrap: anywhere; }
+    @media (max-width: 700px) { .summary { grid-template-columns: 1fr; } table { font-size: .85rem; } }
+  </style>
+</head>
+<body>
+  <h1>DevOps Signal Dashboard</h1>
+  <p id="refreshed">Loading repository signals…</p>
+
+  <section class="summary">
+    <div class="card"><span class="signal GREEN"></span>Green<div class="count" id="green">—</div></div>
+    <div class="card"><span class="signal YELLOW"></span>Yellow<div class="count" id="yellow">—</div></div>
+    <div class="card"><span class="signal RED"></span>Red<div class="count" id="red">—</div></div>
+  </section>
+
+  <h2>Repository Signals</h2>
+  <table>
+    <thead><tr><th>Signal</th><th>Repository</th><th>Workflow</th><th>Result</th><th>Branch</th><th>Updated</th></tr></thead>
+    <tbody id="repos"></tbody>
+  </table>
+
+  <h2>Error Log</h2>
+  <div id="errors"></div>
+
+<script>
+const esc = value => String(value ?? '—').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+fetch('./status.json', {cache: 'no-store'})
+  .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+  .then(data => {
+    document.getElementById('refreshed').textContent = `Last refreshed: ${data.generated_at || 'not yet generated'}`;
+    for (const key of ['green','yellow','red']) document.getElementById(key).textContent = data.summary?.[key] ?? 0;
+    document.getElementById('repos').innerHTML = (data.repositories || []).map(repo => `
+      <tr>
+        <td><span class="signal ${esc(repo.signal)}"></span><strong>${esc(repo.signal)}</strong></td>
+        <td><a href="${esc(repo.url)}">${esc(repo.repository)}</a></td>
+        <td>${repo.run_url ? `<a href="${esc(repo.run_url)}">${esc(repo.workflow || 'workflow')}</a>` : esc(repo.workflow)}</td>
+        <td>${esc(repo.detail)}</td><td>${esc(repo.branch)}</td><td>${esc(repo.updated_at)}</td>
+      </tr>`).join('');
+    const errors = data.errors || [];
+    document.getElementById('errors').innerHTML = errors.length ? errors.map(err => `
+      <article class="error">
+        <h3>${esc(err.repository)} — ${esc(err.workflow)} #${esc(err.run_number)}</h3>
+        <p><strong>Conclusion:</strong> ${esc(err.conclusion)} · <a href="${esc(err.run_url)}">Open workflow run</a></p>
+        ${(err.failed_steps || []).length ? `<ul>${err.failed_steps.map(s => `<li><strong>${esc(s.job)}</strong> → ${esc(s.step)} <code>${esc(s.conclusion)}</code></li>`).join('')}</ul>` : '<p>No failed step details were exposed by the API.</p>'}
+      </article>`).join('') : '<p>No red workflow signals were detected at the last refresh.</p>';
+  })
+  .catch(err => { document.getElementById('refreshed').textContent = `Dashboard data could not be loaded: ${err.message}`; });
+</script>
+</body>
+</html>
