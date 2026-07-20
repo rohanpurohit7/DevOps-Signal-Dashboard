@@ -1,0 +1,57 @@
+name: DevOps Signal Dashboard
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: devops-signal-dashboard
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate portfolio DevOps signals
+        env:
+          DEVOPS_SIGNAL_OWNER: rohanpurohit7
+          DEVOPS_SIGNAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update-devops-signal.py
+
+      - name: Validate generated dashboard
+        run: |
+          set -euo pipefail
+          test -s status.json
+          test -s STATUS.md
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('status.json').read_text())
+          assert data['owner'] == 'rohanpurohit7'
+          assert isinstance(data['repositories'], list)
+          assert set(data['summary']) == {'green', 'yellow', 'red'}
+          print('Signals:', data['summary'])
+          PY
+
+      - name: Commit refreshed dashboard
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add status.json STATUS.md
+          if git diff --cached --quiet; then
+            echo "No DevOps signal changes to commit."
+          else
+            git commit -m "chore: refresh DevOps signal dashboard [skip ci]"
+            git push
+          fi
