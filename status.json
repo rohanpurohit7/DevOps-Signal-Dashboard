@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T17:53:44.136962+00:00",
+  "generated_at": "2026-07-31T19:54:09.408888+00:00",
   "owner": "rohanpurohit7",
   "summary": {
     "green": 5,
@@ -12,15 +12,15 @@
       "url": "https://github.com/rohanpurohit7/Java-Games--DJ-app--Midi-API",
       "signal": "RED",
       "detail": "failure",
-      "workflow": "JavaFX Build",
-      "run_number": 15,
-      "run_url": "https://github.com/rohanpurohit7/Java-Games--DJ-app--Midi-API/actions/runs/30652199981",
+      "workflow": "Guitar Improvisation DevOps Gate",
+      "run_number": 32,
+      "run_url": "https://github.com/rohanpurohit7/Java-Games--DJ-app--Midi-API/actions/runs/30660771523",
       "branch": "master",
-      "updated_at": "2026-07-31T17:42:43Z",
+      "updated_at": "2026-07-31T19:53:30Z",
       "failed_steps": [
         {
-          "job": "build",
-          "step": "Build project",
+          "job": "Compile and Test Studio Audio",
+          "step": "Compile application and run unit tests",
           "conclusion": "failure"
         }
       ]
@@ -152,10 +152,10 @@
       "signal": "YELLOW",
       "detail": "in_progress",
       "workflow": "DevOps Signal Dashboard",
-      "run_number": 116,
-      "run_url": "https://github.com/rohanpurohit7/DevOps-Signal-Dashboard/actions/runs/30652952522",
+      "run_number": 117,
+      "run_url": "https://github.com/rohanpurohit7/DevOps-Signal-Dashboard/actions/runs/30660820282",
       "branch": "main",
-      "updated_at": "2026-07-31T17:53:34Z"
+      "updated_at": "2026-07-31T19:53:57Z"
     },
     {
       "repository": "DocumentApprovalStamp",
@@ -370,15 +370,15 @@
   "errors": [
     {
       "repository": "Java-Games--DJ-app--Midi-API",
-      "workflow": "JavaFX Build",
-      "run_number": 15,
-      "run_url": "https://github.com/rohanpurohit7/Java-Games--DJ-app--Midi-API/actions/runs/30652199981",
+      "workflow": "Guitar Improvisation DevOps Gate",
+      "run_number": 32,
+      "run_url": "https://github.com/rohanpurohit7/Java-Games--DJ-app--Midi-API/actions/runs/30660771523",
       "conclusion": "failure",
-      "updated_at": "2026-07-31T17:42:43Z",
+      "updated_at": "2026-07-31T19:53:30Z",
       "failed_steps": [
         {
-          "job": "build",
-          "step": "Build project",
+          "job": "Compile and Test Studio Audio",
+          "step": "Compile application and run unit tests",
           "conclusion": "failure"
         }
       ]
