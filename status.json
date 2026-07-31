@@ -1,12 +1,30 @@
 {
-  "generated_at": "2026-07-31T12:18:32.913632+00:00",
+  "generated_at": "2026-07-31T15:30:03.016607+00:00",
   "owner": "rohanpurohit7",
   "summary": {
-    "green": 6,
+    "green": 5,
     "yellow": 26,
-    "red": 0
+    "red": 1
   },
   "repositories": [
+    {
+      "repository": "AWS-Enterprise-Architecture-Learn",
+      "url": "https://github.com/rohanpurohit7/AWS-Enterprise-Architecture-Learn",
+      "signal": "RED",
+      "detail": "failure",
+      "workflow": "Render AWS Architecture Diagrams",
+      "run_number": 53,
+      "run_url": "https://github.com/rohanpurohit7/AWS-Enterprise-Architecture-Learn/actions/runs/30642990225",
+      "branch": "master",
+      "updated_at": "2026-07-31T15:28:16Z",
+      "failed_steps": [
+        {
+          "job": "render",
+          "step": "Validate every diagram import",
+          "conclusion": "failure"
+        }
+      ]
+    },
     {
       "repository": "AdobeDigitalSignatureService",
       "url": "https://github.com/rohanpurohit7/AdobeDigitalSignatureService",
@@ -134,10 +152,10 @@
       "signal": "YELLOW",
       "detail": "in_progress",
       "workflow": "DevOps Signal Dashboard",
-      "run_number": 114,
-      "run_url": "https://github.com/rohanpurohit7/DevOps-Signal-Dashboard/actions/runs/30630116364",
+      "run_number": 115,
+      "run_url": "https://github.com/rohanpurohit7/DevOps-Signal-Dashboard/actions/runs/30643115393",
       "branch": "main",
-      "updated_at": "2026-07-31T12:18:20Z"
+      "updated_at": "2026-07-31T15:29:45Z"
     },
     {
       "repository": "DocumentApprovalStamp",
@@ -294,17 +312,6 @@
       "updated_at": "2026-04-04T17:16:04Z"
     },
     {
-      "repository": "AWS-Enterprise-Architecture-Learn",
-      "url": "https://github.com/rohanpurohit7/AWS-Enterprise-Architecture-Learn",
-      "signal": "GREEN",
-      "detail": "success",
-      "workflow": "Render AWS Architecture Diagrams",
-      "run_number": 41,
-      "run_url": "https://github.com/rohanpurohit7/AWS-Enterprise-Architecture-Learn/actions/runs/29776611818",
-      "branch": "master",
-      "updated_at": "2026-07-20T20:33:54Z"
-    },
-    {
       "repository": "Java-Games--battleship",
       "url": "https://github.com/rohanpurohit7/Java-Games--battleship",
       "signal": "GREEN",
@@ -360,5 +367,21 @@
       "updated_at": "2026-07-28T16:53:17Z"
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "repository": "AWS-Enterprise-Architecture-Learn",
+      "workflow": "Render AWS Architecture Diagrams",
+      "run_number": 53,
+      "run_url": "https://github.com/rohanpurohit7/AWS-Enterprise-Architecture-Learn/actions/runs/30642990225",
+      "conclusion": "failure",
+      "updated_at": "2026-07-31T15:28:16Z",
+      "failed_steps": [
+        {
+          "job": "render",
+          "step": "Validate every diagram import",
+          "conclusion": "failure"
+        }
+      ]
+    }
+  ]
 }
