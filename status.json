@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-01T00:14:09.966633+00:00",
+  "generated_at": "2026-08-01T03:54:04.746554+00:00",
   "owner": "rohanpurohit7",
   "summary": {
-    "green": 6,
-    "yellow": 26,
+    "green": 7,
+    "yellow": 25,
     "red": 0
   },
   "repositories": [
@@ -134,10 +134,10 @@
       "signal": "YELLOW",
       "detail": "in_progress",
       "workflow": "DevOps Signal Dashboard",
-      "run_number": 120,
-      "run_url": "https://github.com/rohanpurohit7/DevOps-Signal-Dashboard/actions/runs/30675011886",
+      "run_number": 121,
+      "run_url": "https://github.com/rohanpurohit7/DevOps-Signal-Dashboard/actions/runs/30682871887",
       "branch": "main",
-      "updated_at": "2026-08-01T00:13:58Z"
+      "updated_at": "2026-08-01T03:53:52Z"
     },
     {
       "repository": "DocumentApprovalStamp",
@@ -283,17 +283,6 @@
       "updated_at": "2026-07-09T16:01:08Z"
     },
     {
-      "repository": "TravelManagementApp",
-      "url": "https://github.com/rohanpurohit7/TravelManagementApp",
-      "signal": "YELLOW",
-      "detail": "No GitHub Actions runs",
-      "workflow": null,
-      "run_number": null,
-      "run_url": null,
-      "branch": null,
-      "updated_at": "2026-04-04T17:16:04Z"
-    },
-    {
       "repository": "AmpStudioGuitarApp",
       "url": "https://github.com/rohanpurohit7/AmpStudioGuitarApp",
       "signal": "GREEN",
@@ -347,6 +336,17 @@
       "run_url": "https://github.com/rohanpurohit7/Python-ML-IndustryExample-Finance/actions/runs/29199496478",
       "branch": "main",
       "updated_at": "2026-07-12T16:07:09Z"
+    },
+    {
+      "repository": "TravelManagementApp",
+      "url": "https://github.com/rohanpurohit7/TravelManagementApp",
+      "signal": "GREEN",
+      "detail": "success",
+      "workflow": "Travel Portal Web Build",
+      "run_number": 7,
+      "run_url": "https://github.com/rohanpurohit7/TravelManagementApp/actions/runs/30678871502",
+      "branch": "master",
+      "updated_at": "2026-08-01T01:53:43Z"
     },
     {
       "repository": "VulnerabilityCheckerAutomation",
