@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T07:29:41.677955+00:00",
+  "generated_at": "2026-08-24T09:05:57.212758+00:00",
   "owner": "rohanpurohit7",
   "summary": {
     "green": 7,
@@ -134,10 +134,10 @@
       "signal": "YELLOW",
       "detail": "in_progress",
       "workflow": "DevOps Signal Dashboard",
-      "run_number": 531,
-      "run_url": "https://github.com/rohanpurohit7/DevOps-Signal-Dashboard/actions/runs/32701724066",
+      "run_number": 532,
+      "run_url": "https://github.com/rohanpurohit7/DevOps-Signal-Dashboard/actions/runs/32709650833",
       "branch": "main",
-      "updated_at": "2026-08-24T07:29:32Z"
+      "updated_at": "2026-08-24T09:05:43Z"
     },
     {
       "repository": "DocumentApprovalStamp",
@@ -354,10 +354,10 @@
       "signal": "GREEN",
       "detail": "success",
       "workflow": "Vulnerability POAM Defense-in-Depth Pipeline",
-      "run_number": 13,
-      "run_url": "https://github.com/rohanpurohit7/VulnerabilityCheckerAutomation/actions/runs/32005205370",
+      "run_number": 14,
+      "run_url": "https://github.com/rohanpurohit7/VulnerabilityCheckerAutomation/actions/runs/32701795212",
       "branch": "main",
-      "updated_at": "2026-08-17T07:18:58Z"
+      "updated_at": "2026-08-24T07:31:20Z"
     }
   ],
   "errors": []
