@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-28T05:25:47.891091+00:00",
+  "generated_at": "2026-08-28T18:44:53.006547+00:00",
   "owner": "rohanpurohit7",
   "summary": {
     "green": 7,
-    "yellow": 25,
+    "yellow": 26,
     "red": 0
   },
   "repositories": [
@@ -134,10 +134,10 @@
       "signal": "YELLOW",
       "detail": "in_progress",
       "workflow": "DevOps Signal Dashboard",
-      "run_number": 588,
-      "run_url": "https://github.com/rohanpurohit7/DevOps-Signal-Dashboard/actions/runs/33144723667",
+      "run_number": 589,
+      "run_url": "https://github.com/rohanpurohit7/DevOps-Signal-Dashboard/actions/runs/33200684663",
       "branch": "main",
-      "updated_at": "2026-08-28T05:25:36Z"
+      "updated_at": "2026-08-28T18:44:43Z"
     },
     {
       "repository": "DocumentApprovalStamp",
@@ -270,6 +270,17 @@
       "run_url": null,
       "branch": null,
       "updated_at": "2026-07-09T16:38:38Z"
+    },
+    {
+      "repository": "Sample-SCA-Baselining-Project",
+      "url": "https://github.com/rohanpurohit7/Sample-SCA-Baselining-Project",
+      "signal": "YELLOW",
+      "detail": "No GitHub Actions runs",
+      "workflow": null,
+      "run_number": null,
+      "run_url": null,
+      "branch": null,
+      "updated_at": "2026-08-28T17:21:30Z"
     },
     {
       "repository": "SQL-Plus-Basic-Commands",
